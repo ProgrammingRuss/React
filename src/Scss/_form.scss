@@ -1,8 +1,8 @@
-@use "../utils/variable" as var;
+@use "./variable" as var;
 .form {
   margin: 80px auto;
   border: 2px solid var.$cl-grey;
-  width: 70%;
+  width: 40rem;
   padding: 30px;
   border-radius: 6px;
 

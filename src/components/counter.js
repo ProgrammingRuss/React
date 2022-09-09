@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import logo from "../logo.svg";
+// import logo from "../logo.svg";
 const Counter = () => {
   const [count, setcount] = useState(0);
 

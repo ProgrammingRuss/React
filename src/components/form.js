@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import form from "../Scss/_form.scss";
 export default function Form() {
   const [Name, setName] = useState("");
   const [Pass, setPass] = useState("");
@@ -46,13 +46,13 @@ export default function Form() {
             type="password"
             id="password"
             required
-            placeholder="** ** ** **"
+            placeholder="*** *** *** ***"
             onChange={changePass}
           />
         </div>
 
         <div className="email">
-          <label htmlFor="email">Enter Email</label>
+          <label htmlFor="email">Email</label>
           <br />
           <input
             type="email"
