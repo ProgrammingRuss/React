@@ -1,28 +1,14 @@
-// import Counter from "./components/counter";
-import Form from "./components/form";
-import Slide from "./components/slide";
-import Profile from "./components/profileCard";
-import Data from "./components/data.json";
-
-// for css
-
-// import "bootstrap/dist/css/bootstrap.min.css";
-
+import Toggle from "./components/Toggle";
+import { datas } from "./components/data";
+import style from "./components/Toggle.module.css";
 function App() {
+  console.log(datas);
   return (
-    <div>
-      {Data.map((item, index) => (
-        <Profile
-          key={index}
-          index={index + 1}
-          name={item.name}
-          age={item.age}
-          image={item.image}
-          mobile={item.mobile}
-        />
+    <div className={style.container}>
+      <h1>FAQs</h1>
+      {datas.map((data, index) => (
+        <Toggle key={data.id} {...data} li={index} />
       ))}
-      <Slide />
-      <Form />
     </div>
   );
 }
